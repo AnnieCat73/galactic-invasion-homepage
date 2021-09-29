@@ -77,12 +77,9 @@ select {
 
 img {
   max-width: 100%;
-  
-  
- }
+}
 
 body {
-  
   min-height: 100%;
   background-image: url(../assets/mars-bg.jpg);
   background-size: cover;
@@ -98,16 +95,11 @@ body {
 
 @media (min-width: 80em) {
   body {
-    
     padding: 2em 0 2em 0;
-    
   }
 }
 
 /* typography */
-
-
-
 
 a:hover,
 a:focus {
@@ -127,11 +119,9 @@ a:focus {
   font-weight: var(--fw-700);
 }
 
-
 .text {
   font-size: var(--fs-400);
 }
-
 
 .btn {
   display: inline-block;
@@ -151,15 +141,12 @@ a:focus {
   color: var(--clr-neutral-100);
   background: none;
   align-self: center;
-
 }
 
 .nav-item {
   color: var(--clr-neutral-100);
   text-decoration: none;
   font-weight: var(--fw-400);
-  
-
 }
 
 .square {
@@ -187,75 +174,31 @@ a:focus {
 
 /* general layout classes */
 
-
-
 .main-grid {
   display: grid;
   grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(0px, 150px)) minmax(1em, 1fr);
-  
   gap: 2em 0;
 }
-
 
 
 @media (min-width: 48em) {
   .main-grid {
     grid-template-columns: minmax(7.5em, 1fr) repeat(2, minmax(150px, 250px)) minmax(7.5em, 1fr);
-  
     gap: 2em 0;
-
   }
 }
+
 @media (min-width: 80em) {
   .main-grid {
     grid-template-columns: minmax(7.5em, 1fr) minmax(0px, 1040px) minmax(7.5em, 1fr);
-  
-    
   }
 }
 
 
+/* Components */
 
-.flow-content > * + * {
-  margin-top: 1.25rem;
-}
-
-.flow-content-large {
-  margin-top: 3rem;
-}
-
-
-.split {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2em;
-}
-
-
-.split > * + * {
-  margin: 4rem 0 0 0;
-}
-
-.split > * {
-  flex-basis: 100%;
-}
-
-.xl-space {
-  margin-top: 5rem !important;
-}
-
-
-
-
-@media (min-width: 40em) {
-  
-}
-
-/* components */
 
 /*header*/
-
-
 
 .header {
   padding-top: 1.5em;
@@ -286,13 +229,6 @@ a:focus {
     display: flex;
     gap: 1.5em;
   }
-
-  .header-content {
-    
-    
-  }
-
-
 }
 
 /*main*/
@@ -303,28 +239,24 @@ a:focus {
   grid-template-rows: 25px auto 25px 1fr;
 }
 
-
-
 .countdown {
-  
   display: grid;
-  
   gap: 1.5em;
   grid-row: 4 / 5;
-  
 }
 
 .days {
   grid-column: 1 / 2;
 }
 
-
 .hours {
   grid-column: 2 / 3;
 }
+
 .minutes {
  grid-column: 1 / 2;
 }
+
 .seconds {
   grid-column: 2 / 3;
 }
@@ -334,12 +266,10 @@ a:focus {
     grid-column: 2 / -2;
     grid-template-rows: 122px auto 30px 1fr;
     grid-template-columns: repeat(4, 1fr);
-    
   }
 
   .heading {
     grid-column: 1 / -1;
-    
   }
 
   .countdown {
@@ -366,7 +296,6 @@ a:focus {
 }
   
 
-
 /*footer*/
 
 .footer {
@@ -378,13 +307,12 @@ a:focus {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--clr--sand);
-  
-  
 }
 
 .footer-nav {
   grid-column: 2 / -2;
 }
+
 .footer-nav-list li {
   padding: 1em;
 }
@@ -408,11 +336,6 @@ a:focus {
   grid-row: 5 / 6;
 }
 
-
-
-@media (min-width: 40em) {
-  
-}
 
 @media (min-width: 80em) {
   .footer .footer-nav {
